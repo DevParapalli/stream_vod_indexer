@@ -17,7 +17,7 @@ import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Bump every stable commit
-VERSION = "0.0.6"
+VERSION = "0.0.7"
 
 # This is the data returned by the streamer/ endpoint
 STREAMER_META = {

@@ -31,6 +31,10 @@ help/                                             # Link to HELP Documentation
 
 ## Changelog
 
+- ## v0.0.7
+
+  - Added Release Command to migrate database schema
+
 - ### v0.0.6
 
   - ./static/ contains global css, javascript
