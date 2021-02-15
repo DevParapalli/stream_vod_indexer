@@ -3,6 +3,23 @@
 - [WIP] JSON API for indexing livestreams.
 - Will complete the README.md in the coming patches
 
+## Endpoints
+
+```plaintext
+stream/date/<int:year>/<int:month>/<int:day>/     #streams-by-date
+stream/game/<slug:slug>/                          #streams-by-game-slug
+stream/id/<int:id>/                               #streams-by-stream-id (DjangoModel)
+
+info/slugs/                                       # Returns all game slugs available
+info/last-updated/                                # Returns last change date
+info/streamer/                                    # Returns Info About Streamer
+info/endpoints/                                   # Returns all endpoints available now
+info/version/                                     # Returns the version of current server
+
+help/                                             # Link to HELP Documentation
+<path:path>/                                      # Wildcard for all unassigned paths
+```
+
 ## Installation
 
 1. `python -m pip install -r requirements.txt`
@@ -12,6 +29,10 @@
 - To run the server, run `python manage.py runserver`
 
 ## Changelog
+
+- ### v0.0.5
+
+  - Added Endpoint Information to README.md
 
 - ### v0.0.4
 
