@@ -13,6 +13,20 @@
 
 ## Changelog
 
+- ### v0.0.4
+
+  - Modified GameStorage to add Game Website Links
+  - Modified GameStorage.game_slug to use models.SlugField
+  - Modified StreamStorage to add VOD Link, VOD Status
+  - Added StreamViews for
+    - by-date
+    - by-slug
+    - by-id
+  - Added ModelAdmin to GameStorage
+    - Autofills game_slug according to GameStorage.game_name
+  - Modified URLResolverPaths
+    - Corrected stream/yyyy/mm/dd/ to stream/date/yyyy/mm/dd/
+
 - ### v0.0.3 - README.md
 
   - Added installation instructions to README.md

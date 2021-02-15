@@ -10,7 +10,7 @@ from .views_info import slugs, last_updated, streamer, endpoints
 
 urlpatterns = [
     # Stream PATH
-    path('stream/<int:year>/<int:month>/<int:day>/',date, name="by-date"), # Returns list of streams by date
+    path('stream/date/<int:year>/<int:month>/<int:day>/',date, name="by-date"), # Returns list of streams by date
     path('stream/game/<slug:slug>/', slug, name="by-slug"), # Returns list by game-slug
     path('stream/id/<int:id>/', id, name="by-id"), # Returns Single Object, Use if you know ID
     
