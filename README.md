@@ -27,8 +27,14 @@ help/                                             # Link to HELP Documentation
 3. `python manage.py migrate`
 
 - To run the server, run `python manage.py runserver`
+- If desired, place custom static files in the ./static/ folder
 
 ## Changelog
+
+- ### v0.0.6
+
+  - ./static/ contains global css, javascript
+  - ./staticfiles/ is automatically populated by Django COLLECTSTATIC Command
 
 - ### v0.0.5
 
