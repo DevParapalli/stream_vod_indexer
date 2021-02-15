@@ -95,7 +95,7 @@ DATABASES = {
     }
 }
 # Change Database iff Connection Params are present
-if ((os.getenv('DATABASE_URL') is None) or (not DEBUG)):DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=False) # Not SSL since connection is internal to Heroku
+if ((os.getenv('DATABASE_URL') is not None) or (not DEBUG)):DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=False) # Not SSL since connection is internal to Heroku
 
 
 # Password validation
@@ -124,11 +124,11 @@ LANGUAGE_CODE = 'en-uk'
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = False
+USE_I18N = True
 
-USE_L10N = False
+USE_L10N = True
 
-USE_TZ = False
+USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
@@ -140,6 +140,7 @@ STATICFILES_DIRS = (
 )
 
 # Custom Django Security Settings
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+if not DEBUG:
+    SECURE_SSL_REDIRECT = True
+    SESSION_COOKIE_SECURE = True
+    CSRF_COOKIE_SECURE = True
