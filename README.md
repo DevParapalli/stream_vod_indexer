@@ -1,4 +1,6 @@
 # Live Stream VOD Indexer
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDevParapalli%2Fstream_vod_indexer.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FDevParapalli%2Fstream_vod_indexer?ref=badge_shield)
+
 
 - [WIP] JSON API for indexing livestreams.
 - Will complete the README.md in the coming patches
@@ -72,3 +74,7 @@ help/                                             # Link to HELP Documentation
 
   - Added Initial Files
   - Setup Django Mapping
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FDevParapalli%2Fstream_vod_indexer.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FDevParapalli%2Fstream_vod_indexer?ref=badge_large)
